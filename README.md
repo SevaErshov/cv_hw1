@@ -22,6 +22,9 @@ poetry run python3.12 run.py input=video/my_video.mov output=video/my_stable.mp4
 Для вычисления плотного оптического потока использовался алгоритм Farnebäck. Далее при помощи построения аффинной модели (RANSAC)оценивалось глобальное движение. Траектория рассчитывается как кумулятивная сумма трансформаций и ее сглаживание осуществляется при помощи скользящего среднего (radius=15). При помощи warp происходит компенсация движения. После этого этапа возникают черные рамки, поэтому видео обрезается и возвращается к исходному размеру.
 
 Визуализации траекторий до/после:
+![trajectory x](https://github.com/SevaErshov/cv_hw1/blob/main/visualizations/trajectory_x.png)
+![trajectory y](https://github.com/SevaErshov/cv_hw1/blob/main/visualizations/trajectory_y.png)
+![trajectory angle](https://github.com/SevaErshov/cv_hw1/blob/main/visualizations/trajectory_angle.png)
 
 Оригинальные кадры и стабилизированные доступны в директории video.
 
