@@ -1,0 +1,4 @@
+input: video/orig.mov
+output: video/stabilized.mp4
+visualization_dir: visualizations
+border: 30
