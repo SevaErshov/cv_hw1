@@ -4,8 +4,8 @@
 
 ## Installation
 ```bash
-git clone <URL_репозитория>
-cd <repo_name>
+git clone https://github.com/SevaErshov/cv_hw1.git
+cd cv_hw1
 poetry install
 ```
 
